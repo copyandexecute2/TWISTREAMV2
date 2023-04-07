@@ -1,0 +1,53 @@
+/*Main Style*/
+body {
+    height: 100vh;
+    background: url(bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*Over text*/
+
+.h1{
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: rgb(255, 0, 157);
+}
+/*text style*/
+
+
+.text1 {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+
+.text2 {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+
+/*Footer style*/
+
+footer {
+    position: unset;
+    background-color:blueviolet;
+    color: #444;
+    text-align: center;
+    padding: 20px;
+  }
+  footer p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    left: 0;
+    right: 0;
+  }
+
+
+  

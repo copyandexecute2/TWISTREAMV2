@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>TWISTREAM</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <!-- Links zu CSS-Dateien und JavaScript-Dateien -->
+  </head>
+  <body>
+    <!-- Header-Bereich -->
+    <header>
+      <div class="logo">
+      <img src="logo.png" alt="Logo" loading="lazy">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Startseite</a></li>
+          <li><a href="#">Kategorien</a></li>
+          <li><a href="streamsetup.html">Starte Dein Stream</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Suchen..." id="search-input">
+        <button>Suchen</button>
+        <script>
+            function search() {
+  // Holen Sie sich den eingegebenen Suchbegriff
+  var searchTerm = document.getElementById("search-input").value;
+  
+  // Führen Sie hier Ihre Suchlogik aus und aktualisieren Sie die Ergebnisse
+  // Beispiel:
+  var streamList = document.querySelector(".stream-list ul");
+  var streamItems = streamList.querySelectorAll("li");
+  
+  for (var i = 0; i < streamItems.length; i++) {
+    var title = streamItems[i].querySelector(".title").textContent;
+    var description = streamItems[i].querySelector(".description").textContent;
+    
+    if (title.includes(searchTerm) || description.includes(searchTerm)) {
+      streamItems[i].style.display = "block";
+    } else {
+      streamItems[i].style.display = "none";
+    }
+  }
+}
+
+        </script>
+      </div>
+      <div class="login1">
+      <ul>
+      <li><a href="login.html">Login</a></li>
+      </div>
+      <div class="login2">
+      <li><a href="signup.html">Start</a></li>
+      
+    </ul>  
+        </header>
+    
+    <!-- Hauptbereich -->
+    <main>
+      <!-- Karussell mit den aktuellsten und beliebtesten Streams -->
+      <section class="carousel">
+        <!-- Inhalte des Karussells -->
+      </section>
+      
+      <!-- Stream-Übersicht -->
+      <section class="stream-list">
+        <h2>Beliebte Streams</h2>
+        <ul>
+          <!-- Liste der beliebtesten Streams -->
+        </ul>
+      </section>
+      
+      <!-- Kategorien-Liste -->
+      <section class="category-list">
+        <h2>Kategorien</h2>
+        <label for="stream-language">Sprache Ihres Streams:</label>
+			<select id="stream-language" name="stream-language">
+				<option value="de">Deutsch</option>
+				<option value="en">Englisch</option>
+				<option value="es">Spanisch</option>
+				<option value="fr">Französisch</option>
+				<option value="it">Italienisch</option>
+				<option value="ja">Japanisch</option>
+				<option value="ko">Koreanisch</option>
+				<option value="pt">Portugiesisch</option>
+				<option value="ru">Russisch</option>
+				<option value="zh">Chinesisch</option>
+			</select>
+      </section>
+      <label for="stream-language">Tag's:</label>
+			<select id="stream-language" name="stream-language">
+				<option value="mc">Minecraft JAVA</option>
+				<option value="fortnite">Fortnite</option>
+				<option value="cod">Call of Duty</option>
+				<option value="sw">Stardew Valley</option>
+				<option value="bd">Block Dash</option>
+				<option value="info">News</option>
+				<option value="mcdungeon">Minecraft Dungeons</option>
+				<option value="mcbedrock">Minecraft BEDROCK</option>
+				<option value="code">Coding Tutorial</option>
+				<option value="other">Other</option>
+			</select>
+			</select>
+      <div class="search2">
+        <br>
+        <button>Suchen</button>
+        <script src="seacrchjs.js"></script>
+      </div>
+    </main>
+    <footer>
+    <p>&copy; 2023 TWISTREAM</p>
+    </footer>
+  </body>
+</html>
